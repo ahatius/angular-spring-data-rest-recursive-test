@@ -1,0 +1,25 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+}
+
+/* Custom page header */
+.header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.split-id-button {
+	padding: 5px;
+}
+
+.ippd-split-overview {
+	padding-left: 10px;
+	padding-right: 10px;
+}
