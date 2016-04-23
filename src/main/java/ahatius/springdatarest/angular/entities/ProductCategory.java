@@ -1,12 +1,7 @@
 package ahatius.springdatarest.angular.entities;
 
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 /**
  * Represents the category of a product
@@ -20,9 +15,6 @@ public class ProductCategory {
   private int productCategoryId;
 
   private String name;
-
-  @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "productCategory")
-  private List<Product> products;
 
   /**
    * @return the productCategoryId
@@ -50,19 +42,5 @@ public class ProductCategory {
    */
   public void setName(String name) {
     this.name = name;
-  }
-
-  /**
-   * @return the products
-   */
-  public List<Product> getProducts() {
-    return products;
-  }
-
-  /**
-   * @param products the products to set
-   */
-  public void setProducts(List<Product> products) {
-    this.products = products;
   }
 }
